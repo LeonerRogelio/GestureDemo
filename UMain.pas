@@ -45,10 +45,8 @@ begin
 end;
 
 { Responder al gesto realizado. Cuando realizar un gesto, en el se registra el identificador del gesto que
-  se recibió, en este caso los gestos implementados son, movimiento a la: izquierda, derecha, arriba y abajo }
-procedure TfrmMain.pnlMainGesture(Sender: TObject;
-  const EventInfo: TGestureEventInfo; var Handled: Boolean);
-
+  se recibiÃ³, en este caso los gestos implementados son, movimiento a la: izquierda, derecha, arriba y abajo }
+procedure TfrmMain.pnlMainGesture(Sender: TObject; const EventInfo: TGestureEventInfo; var Handled: Boolean);
 var
   S: string;
 begin
@@ -57,5 +55,4 @@ begin
 
   memLog.Lines.Add(Format('GestureID = %D, <%s>', [EventInfo.GestureID, S]));
 end;
-
 end.
